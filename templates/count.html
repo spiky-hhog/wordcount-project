@@ -1,0 +1,8 @@
+<h1>There are {{ count }} words in your text:</h1>
+<p>{{ fulltext }}</p>
+<a href="{% url 'home' %}">Start again</a>
+<h1>Word count:</h1>
+{% for word,countw in histogram  %}
+{{word}} - {{countw}}
+<br />
+{% endfor %}
